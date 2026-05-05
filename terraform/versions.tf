@@ -8,8 +8,8 @@ terraform {
     }
   }
 
-  
-backend "s3" {
+
+  backend "s3" {
     bucket         = "cicd-lab-tfstate-helkhatib-abc123"
     key            = "prod/terraform.tfstate"
     region         = "eu-north-1"

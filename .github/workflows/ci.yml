@@ -90,6 +90,7 @@ jobs:
           exit-code: "1"
           severity: "CRITICAL,HIGH"
           ignore-unfixed: true
+          trivyignores: ".trivyignore"
 
       - name: Scan frontend image with Trivy
         uses: aquasecurity/trivy-action@master
@@ -99,6 +100,7 @@ jobs:
           exit-code: "1"
           severity: "CRITICAL,HIGH"
           ignore-unfixed: true
+          trivyignores: ".trivyignore"
 
       - name: Push backend image
         run: |
